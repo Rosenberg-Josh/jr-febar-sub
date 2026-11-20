@@ -1,0 +1,12 @@
+command: ['pnpm', 'run', 'start']
+health_check:
+  path: /health
+env:
+  - name: DATABRICKS_WAREHOUSE_ID
+    valueFrom: sql-warehouse
+  - name: LAKEBASE_ENDPOINT
+    valueFrom: postgres
+  - name: DATABRICKS_GENIE_SPACE_ID
+    value: "01f1e515d97219778c6b1b949e434962"
+  - name: MLFLOW_EXPERIMENT_ID
+    value: "3633360869711066"

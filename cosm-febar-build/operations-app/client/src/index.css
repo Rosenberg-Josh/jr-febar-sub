@@ -1,0 +1,79 @@
+@import "@databricks/appkit-ui/styles.css";
+
+/* Cosm Operations Center — a single dark, immersive-venue theme.
+   One bold element: the cosmic-violet primary. Everything else stays quiet. */
+:root {
+  color-scheme: dark;
+  --radius: 0.75rem;
+
+  --background: hsl(250 42% 6%);
+  --foreground: hsl(250 24% 94%);
+
+  --card: hsl(250 34% 9.5%);
+  --card-foreground: hsl(250 24% 94%);
+  --popover: hsl(250 36% 11%);
+  --popover-foreground: hsl(250 24% 94%);
+
+  --primary: hsl(258 88% 70%);
+  --primary-foreground: hsl(252 45% 8%);
+
+  --secondary: hsl(250 24% 16%);
+  --secondary-foreground: hsl(250 20% 92%);
+
+  --muted: hsl(250 22% 14%);
+  --muted-foreground: hsl(250 14% 62%);
+
+  --accent: hsl(258 40% 22%);
+  --accent-foreground: hsl(250 24% 95%);
+
+  --destructive: hsl(2 72% 60%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --success: hsl(158 64% 46%);
+  --success-foreground: hsl(160 60% 6%);
+  --warning: hsl(38 92% 60%);
+  --warning-foreground: hsl(38 80% 8%);
+
+  --border: hsl(250 24% 18%);
+  --input: hsl(250 24% 20%);
+  --ring: hsl(258 88% 70%);
+
+  /* Categorical chart series (hex/hsla — the chart renderer cannot parse oklch). */
+  --chart-cat-1: #a78bfa;
+  --chart-cat-2: #38bdf8;
+  --chart-cat-3: #f5b942;
+  --chart-cat-4: #34d399;
+  --chart-cat-5: #f472b6;
+  --chart-cat-6: #818cf8;
+  --chart-cat-7: #22d3ee;
+  --chart-cat-8: #fb923c;
+
+  /* Sequential (low → high), pale lavender to deep violet. */
+  --chart-seq-1: #ece7fe;
+  --chart-seq-2: #cfc2fb;
+  --chart-seq-3: #b29bf7;
+  --chart-seq-4: #9472f0;
+  --chart-seq-5: #7a4fe4;
+  --chart-seq-6: #6336cc;
+  --chart-seq-7: #4e27a6;
+  --chart-seq-8: #3a1c80;
+
+  --chart-grid: hsl(250 24% 18%);
+  --chart-axis-label: hsl(250 14% 62%);
+  --chart-axis-title: hsl(250 16% 72%);
+  --chart-tooltip-bg: hsl(250 36% 11%);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background: var(--background);
+}
+
+/* A faint cosmic gradient wash behind the app — the single page-level flourish. */
+body {
+  background-image:
+    radial-gradient(60rem 40rem at 82% -8%, hsl(258 70% 30% / 0.35), transparent 60%),
+    radial-gradient(48rem 36rem at 2% 2%, hsl(220 80% 32% / 0.22), transparent 55%);
+  background-attachment: fixed;
+}
